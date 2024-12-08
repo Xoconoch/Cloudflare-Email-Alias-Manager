@@ -69,7 +69,7 @@ Contributions, bug reports, and feature requests are welcome! Feel free to open 
 
 ## License
 
-This project is licensed under the [GPL-3.9 license](LICENSE).
+This project is licensed under the [GPL-3.0 license](LICENSE).
 
 ---
 
