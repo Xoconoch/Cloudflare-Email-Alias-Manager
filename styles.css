@@ -1,0 +1,219 @@
+.menu-bar {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px; /* Mantiene la separación entre los botones */
+}
+
+button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Ajusta el tamaño de los botones */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Tamaño consistente */
+  border-radius: 5px; /* Redondea los bordes */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Botones del menú */
+.menu-bar button {
+  font-weight: bold;
+}
+
+/* Botones específicos en la lista de aliases */
+button.edit-alias,
+button.delete-alias {
+  margin: 2px; /* Añade un margen pequeño para separación uniforme */
+}
+
+button.edit-alias {
+  margin-right: 8px; /* Separa "Editar" de "Eliminar" */
+}
+
+/* Contenedor general para formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaciado uniforme entre elementos */
+  max-width: 400px;
+  margin: auto; /* Centra el formulario en la pantalla */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Alineación de etiquetas e inputs */
+form label {
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botones del formulario */
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Contenedor de configuración */
+#setup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#setup-form h2 {
+  margin-bottom: 20px;
+}
+
+#setup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#setup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#setup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#setup-form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para la tabla */
+table {
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Elimina los espacios entre las celdas */
+  font-size: 14px;
+}
+
+table th,
+table td {
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Bordes ligeros */
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Tono claro de gris */
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff; /* Blanco */
+}
+
+table th {
+  background-color: #333;
+  color: white;
+  text-transform: uppercase;
+  text-align: center; /* Centra el texto en las cabeceras */
+}
+
+table tr:hover {
+  background-color: #e0e0e0; /* Color de fondo cuando pasas el mouse */
+}
+
+/* Estilo para los toggles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Centrar los toggles en la columna */
+table td {
+  vertical-align: middle; /* Centra verticalmente el contenido */
+}
+
+table td:nth-child(3) {
+  text-align: center; /* Centra horizontalmente la columna del toggle */
+}
+
